@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif; /* Сказочный шрифт */
+    color: white;
+    background-color: #1a1a1a; /* Запасной темный фон */
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+header {
+    
+    
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, #E6E68A 100%), 
+                url('../images/totoro_new.png');
+    
+    background-size: cover; 
+    background-position: center;
+    height: 80vh; /* Высота блока — 80% экрана */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Чтобы текст на фоне читался */
+}
+
+
+/* Настройка фона всей страницы */
+
+.hero {
+    height: 100vh;
+    
+    background: linear-gradient(to bottom, rgba(226, 218, 201, 0) 70%, #E2DAC9 100%), 
+                url('../images/backround.jfif') no-repeat center center/contain;
+    
+   
+    background-color: #E2DAC9; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 { 
+    font-size: 5rem; 
+    margin: 0; 
+    color: #5F7457; /* Тот самый зеленый цвет Тоторо */
+    text-shadow: none; /* Убираем тень, на светлом фоне она может выглядеть грязно */
+}
+
+/* Та самая органическая кнопка как у Yaelokre */
+.btn-organic {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: #e6ccb2;
+    color: #432818;
+    text-decoration: none;
+    font-weight: bold;
+    /* Неровная форма */
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transition: 0.4s;
+}
+
+.btn-organic:hover {
+    border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%;
+    transform: scale(1.1);
+}
+
+/* Контейнер для 3-х карточек */
+.main-nav .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 100px 20px;
+    background: #2b2d42; /* Цвет плавно переходит в другой раздел */
+}
+
+/* Стеклянные карточки (Glassmorphism) */
+.nav-card {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px); /* Размытие фона за карточкой */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.card-image {
+    height: 180px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Музыкальный блок */
+.audio-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    opacity: 0.7;
+}

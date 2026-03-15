@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Енциклопедія Ghibli</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="audio-box">
+        <audio controls>
+            <source src="music/main_theme.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Studio Ghibli</h1>
+            <p>Путівник по магічних світах Хаяо Міядзакі</p>
+            <a href="#menu" class="btn-organic">Почати подорож</a>
+        </div>
+    </header>
+
+    <main id="menu" class="main-nav">
+        <div class="container">
+            
+            <a href="movies.html" class="nav-card">
+                <div class="card-image" style="background-image: url('images/movies_bg.jpg');"></div>
+                <h3>Список фільмів</h3>
+                <p>досліджуйте всі шедеври студії</p>
+            </a>
+
+            <a href="characters.html" class="nav-card">
+                <div class="card-image" style="background-image: url('images/chars_bg.jpg');"></div>
+                <h3>Персонажі</h3>
+                <p>Герої, що живуть в серці</p>
+            </a>
+
+            <a href="about.html" class="nav-card">
+                <div class="card-image" style="background-image: url('images/studio_bg.jpg');"></div>
+                <h3>Про студію</h3>
+                <p>Історія створення легенди</p>
+            </a>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>«здобуття свободи — найбільша радість, що доступна людині»</p>
+    </footer>
+
+</body>
+</html>     
